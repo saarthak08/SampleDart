@@ -1,3 +1,4 @@
+import 'package:SampleDart/Person.dart';
 import 'package:SampleDart/SampleDart.dart' as SampleDart;
 
 void main(List<String> arguments) {
@@ -5,6 +6,9 @@ void main(List<String> arguments) {
 
   var myString=myName();
   print('Welcome \n${myString}\nLength:${myString.length}');  //${myString} is String Interpolation
+  var person=Person();
+  person.myName='Saarthak';
+  person.printName();
 }
 
 
