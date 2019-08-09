@@ -6,12 +6,13 @@ void main(List<String> arguments) {
 
   var myString=myName();
   print('Welcome \n${myString}\nLength:${myString.length}');  //${myString} is String Interpolation
-  var person=Person();
-  person.myName='Saarthak';
+  var person=Person(myName());
+  //person.myName=myName();
+  print('Inside the class: ');
   person.printName();
 }
 
 
 String myName(){
-  return 'Hey! I am Saarthak';
+  return 'Saarthak';
 }
